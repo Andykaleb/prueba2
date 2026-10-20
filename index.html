@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ExpoCredit Knowledge Center</title>
+<meta name="description" content="Centro de consulta KYC, AML y Compliance para BDOs de ExpoCredit">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-shell">
+<aside class="sidebar" id="sidebar">
+  <div class="brand"><svg width="190" height="42" viewBox="0 0 190 42" xmlns="http://www.w3.org/2000/svg"><text x="0" y="28" font-size="28" font-family="Arial" fill="#0A4FAF" font-weight="700">ExpoCredit</text></svg><div class="brand-line"></div><div class="brand-product">KNOWLEDGE CENTER</div></div>
+  <nav class="nav"></nav>
+  <div class="sidebar-footer"><div class="mini-card"><b>Guía para BDOs</b><span>Consulta rápida para presentar expedientes completos y consistentes.</span></div></div>
+</aside>
+<main class="main">
+<header class="topbar"><button class="mobile-menu" id="mobileMenu">☰</button><div class="search-wrap"><span>⌕</span><input id="globalSearch" type="search" placeholder="Buscar: UBO, México, OD, SAT, Perú, poderes..."><kbd>⌘ K</kbd></div><button class="ghost-btn" id="resetChecklist">Reiniciar checklist</button></header>
+<section id="home" class="page active-page">
+  <div class="hero"><div class="hero-copy"><div class="eyebrow">EXPOCREDIT · KNOWLEDGE CENTER</div><h1>KYC, AML &amp;<br>Compliance Hub</h1><p>Encuentra la información que necesitas en segundos. Una sola biblioteca para Clientes, Brokers, requisitos por país y Compliance.</p><div class="hero-search"><input id="heroSearch" placeholder="¿Qué deseas consultar hoy?"><button id="heroSearchBtn">Buscar</button></div><div class="quick-tags"><button data-query="OD">OD ≥ 10%</button><button data-query="México">México</button><button data-query="Perú">Perú</button><button data-query="UBO">UBO</button></div></div><div class="hero-panel"><div class="score-label">Completitud del expediente</div><div class="score-number"><span id="heroPercent">0</span>%</div><div class="progress"><div id="heroProgress" class="progress-bar"></div></div><p id="heroProgressText">Marca los documentos que ya tienes.</p><button class="primary-btn" data-section="checklist">Ir al checklist</button></div></div>
+  <div class="section-head"><div><div class="eyebrow">CONSULTA RÁPIDA</div><h2>¿Qué necesitas validar?</h2></div></div><div id="moduleGrid" class="module-grid"></div>
+  <div class="dashboard-grid"><section class="panel"><div class="panel-head"><div><div class="eyebrow">PREVENCIÓN</div><h3>Errores que más retrasan un onboarding</h3></div><button class="link-btn" data-section="errores">Ver todos</button></div><div class="alert-list"><button class="alert-item" data-section="clientes"><span>🚨</span><div><strong>Información incompleta</strong><small>KYC superficial o documentos base faltantes generan consultas adicionales.</small></div></button><button class="alert-item" data-section="compliance"><span>🚨</span><div><strong>OD inconsistente</strong><small>Los accionistas ≥10% y sus porcentajes deben coincidir con el acta.</small></div></button><button class="alert-item" data-section="paises"><span>🚨</span><div><strong>Requisito tributario equivocado</strong><small>Cada país tiene documentación específica para clientes y brokers.</small></div></button><button class="alert-item" data-section="compliance"><span>🚨</span><div><strong>Falta UBO</strong><small>La cadena debe llegar hasta las personas físicas beneficiarias finales.</small></div></button></div></section><section class="panel"><div class="panel-head"><div><div class="eyebrow">EXPEDIENTE</div><h3>Checklist rápido</h3></div><span class="pill" id="miniPercent">0%</span></div><div id="miniChecklist"></div></section></div>
+</section>
+<section id="search-results" class="page"><div class="page-title"><div class="eyebrow">RESULTADOS</div><h1>Resultados de búsqueda</h1><p id="searchSummary"></p></div><div id="searchResults" class="search-results"></div></section>
+<section id="clientes" class="page"></section><section id="brokers" class="page"></section><section id="paises" class="page"></section><section id="compliance" class="page"></section><section id="incorporacion" class="page"></section><section id="identificacion" class="page"></section><section id="ownership" class="page"></section><section id="ubo" class="page"></section><section id="fiscal" class="page"></section><section id="poderes" class="page"></section><section id="antecedentes" class="page"></section><section id="block1" class="page"></section><section id="block2" class="page"></section><section id="block3" class="page"></section><section id="block4" class="page"></section><section id="block5" class="page"></section><section id="block6" class="page"></section><section id="block7" class="page"></section><section id="checklist" class="page"></section><section id="errores" class="page"></section>
+</main></div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body></html>
